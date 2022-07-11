@@ -1,0 +1,67 @@
+.header  .content{
+    display: flex;
+   
+}
+.header .content{
+    margin-top: 1rem;
+}
+
+
+.header .content h1{
+    margin-left: 2rem;
+}
+.header .content .btn{
+    width: 230px;
+    margin: auto;
+    border: 1px solid rgba(135, 134, 134, 0.5);
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+    top: -10px;
+    left: -5rem;
+}
+.header .content .btn input{
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+.header .content button{
+    position: absolute ;
+    right: 6rem;
+    height: 35px;
+    width: 150px;
+    border: none;
+   border-radius: 8px;
+   background: #2B78D4;
+  
+}
+
+@media(max-width:768px){
+    .header .content .btn{
+        margin-left: 8rem;
+    }
+   
+}
+
+@media(max-width:420px){
+    .header .content {
+        flex-flow: column;  
+        
+    }
+    .header .content h1{
+        margin-left: 4px;
+    }
+    .header .content button{
+        position: absolute;
+        right: 4rem; 
+    }
+    .header .content .btn{
+        width: 286px;
+        position: relative;
+        left: -7rem;
+    }
+    
+    
+}
+
