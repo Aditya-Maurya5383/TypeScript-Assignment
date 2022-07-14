@@ -1,14 +1,13 @@
 import './App.css';
-import Cards from './components/card/Card';
-import Sidebar from './components/sidebar/Sidebar';
+import Dashboard from './components/Dashboard/dashboard';
+
 
 
 
 function App() {
   return (
     <div className="container">
-      <Sidebar/>
-      <Cards/>
+      <Dashboard/>
     </div>
   );
 }

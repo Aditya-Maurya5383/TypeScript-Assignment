@@ -16,13 +16,3 @@ export default function Cards() {
 
   )
 }
-
-/*
-<div className="cards-box">
-{data.map((item)=>(
-<div>
- <h3>{item.id}</h3> 
-  </div>
- ))
- }
-</div>*/
