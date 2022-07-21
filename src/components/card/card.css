@@ -6,13 +6,16 @@
     background: #F4F9FF;
     height: 100vh;
     overflow-x: scroll;
+    padding-right:2rem;   
 }
 
 .site-card-border-less-wrapper{
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+
     display: grid;
     column-gap: 0px;
-    grid-template-columns: 286px  286px 286px 286px;
+     
+    grid-template-columns: 286px  286px  286px 286px;
 }
 .site-card-border-less-wrapper .box{
 
@@ -127,6 +130,7 @@
     font-size: 15px;
 }
 .ant-row .btnn {
+
     margin-left: 5rem;
     margin-top: 2rem;
 }
@@ -148,6 +152,23 @@
 }
 
 
+
+
+
+@media(max-width:1024px){
+    .cards{
+        padding: .2rem;
+    }
+    .site-card-border-less-wrapper{
+        grid-template-columns: 286px  286px  286px;
+        margin-left: 2rem;
+        
+    }
+    
+   
+}
+
+
   @media(max-width:768px){
     
     .site-card-border-less-wrapper{
@@ -158,11 +179,24 @@
   }
 
   
-  @media(max-width:420px){
+  @media(max-width:426px){
     .site-card-border-less-wrapper{
         grid-template-columns: 286px;
         margin: auto;
         overflow: hidden;
-        
+        margin: auto;
     }
-  }
+    
+}
+@media(max-width:376px){
+    .site-card-border-less-wrapper{
+        grid-template-columns: 295px;
+        margin: auto;
+    }
+}
+
+@media(max-width:376px){
+    .site-card-border-less-wrapper{
+        grid-template-columns: 278px;
+    }
+}

@@ -9,7 +9,7 @@ export default function Cards() {
     <div className="cards">
       <Header />
       <DisplayCard/>
-
+       
 
 
     </div>

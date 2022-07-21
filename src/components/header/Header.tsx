@@ -61,7 +61,49 @@ export default function Header() {
       <div style={{ marginTop: 8 }}>Upload</div>
     </div>
   );
-  
+  const [img, setImg] = useState('');
+  const [name, setName] = useState('');
+
+   const [desig, setDesig] = useState('');
+   const [details, setDetails] = useState('');
+   
+
+
+   const handle = () => {
+
+    let empdetails= JSON.parse(`${localStorage.getItem('empdetails') || '[]'}`);
+    const empd=Object.values(empdetails);  
+
+
+    let payload: any ={
+      
+      id:empd.length, 
+      imgs:img,
+      title:name,
+
+      description:desig,
+
+      content1: details
+
+    }
+
+
+
+    empdetails.push(payload);
+
+    localStorage.setItem('empdetails', JSON.stringify(empdetails));    
+   setImg('');setName('');setDesig('');setDetails('');
+    setIsModalVisible(false);  
+
+     
+    window.location.reload(); 
+   };
+
+   
+
+   
+
+
 
   return (
     <div className="header">
@@ -85,6 +127,7 @@ export default function Header() {
                 action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
                 beforeUpload={beforeUpload}
                 onChange={handleChange}
+                // value={img} onChange={(e) => setImg(e.target.value)}
               >
                 {imageUrl ? <img src={imageUrl} alt="avatar" style={{ width: '100%' }} /> : uploadButton}
               </Upload>
@@ -95,17 +138,17 @@ export default function Header() {
               <p>Employee Details</p>
             </Col >
             <Col span={10}>
-            {/* value={this.state.name}  */}
-              <Input placeholder="" />
-              <Input placeholder="" />
+          
+              <Input  className="text" id ="test1"  value={name} onChange={(e) => setName(e.target.value)} placeholder="" />
+              <Input className="text" id="test2"  value={desig} onChange={(e) => setDesig(e.target.value)} placeholder="" />
               
-              <TextArea rows={4} />
+              <TextArea    rows={4}  value={details}  onChange={(e) => setDetails(e.target.value)}/>
 
             </Col>
           </Row>
           <Row>
             <span className='btn'>
-               <button>Save</button>
+               <button onClick={handle}>Save</button>
                <button onClick={handleCancel}> Cancel</button>
             </span>
           </Row>
