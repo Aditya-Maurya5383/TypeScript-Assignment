@@ -1,0 +1,305 @@
+.ant-menu-inline {
+  padding: 0 7px;
+}
+
+.anticon,
+.anticon-swap,
+.ant-menu-item-icon {
+  margin-left: -8px;
+}
+
+.center-sidebar li {
+  color: orange;
+}
+
+.NavBar {
+  height: 100vh;
+  background: #ffffff;
+}
+
+@media screen and (min-width:992px) {
+
+  .ant-layout-sider,
+  .ant-layout-sider-dark,
+  .NavBar {
+    flex: 0 0 200px !important;
+    max-width: 70px !important;
+    min-width: 50px !important;
+    width: 200px !important;
+  }
+}
+
+.Logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.middleIcon img {
+  width: 30px;
+}
+
+.ant-menu-item,
+.ant-menu-item-only-child {
+  padding-left: 0px !important;
+}
+
+.ant-menu-item,
+.ant-menu-item-only-child,
+.one {
+  padding-left: 0px !important;
+}
+
+.bottomIcon {
+  width: 50px;
+  height: 80px;
+  margin: 6rem 15px;
+
+}
+
+.bottomIcon img {
+  margin-top: 15px;
+  margin-right: 25px;
+}
+
+
+.Mainlogo {
+  font-size: 880px !important;
+
+}
+
+.ant-layout-sider-zero-width-trigger {
+  top: 5px;
+}
+
+.sidebar {
+  background-color: #ffffff;
+
+}
+
+.ant-input {
+  border-left: none;
+  width: 80%;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #212121;
+  font-weight: 700;
+  font-size: 23px;
+
+}
+
+@media screen and (max-width:992px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:560px) {
+  .button {
+    margin-top: -25px;
+  }
+}
+
+.Cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1520px) {
+  .Cards {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .Cards {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .Cards {
+    grid-template-columns: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 800px;
+  }
+}
+
+.ant-card,
+.ant-card-bordered {
+  border-radius: 19px;
+}
+
+.ant-card-body {
+  padding: 10px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.title {
+  font-weight: 700;
+  color: #002F68;
+}
+
+.description {
+  font-size: 12px;
+  color: #5C83B1;
+
+}
+
+.content1 {
+  font-weight: 400;
+}
+
+.ant-card:hover {
+  border: 2px solid #2b78d4;
+
+}
+
+.ant-layout-content,
+.site-layout-background {
+  background-color: #F4F9FF;
+}
+
+.hover-para {
+  font-size: 13px;
+  color: #7D7D7D;
+}
+
+.ant-btn,
+.ant-btn-primary {
+  float: right;
+  margin-top: 14px;
+  border-radius: 5px;
+}
+
+.viewDetails {
+  padding: 4px 24px !important;
+}
+
+.textarea.ant-input {
+  max-width: 117% !important;
+}
+
+.hover-content {
+  display: none;
+}
+
+.ant-card:hover .hover-content {
+  display: block;
+}
+
+.beforeHover,
+.avatar {
+  display: block;
+}
+
+.ant-card:hover .beforeHover {
+  display: none;
+}
+
+.ant-card:hover .avatar {
+  display: none;
+}
+
+.input {
+  font-weight: bold;
+  font-size: 16px;
+  color: #002F68;
+}
+
+.ant-modal-title {
+  font-size: 14px;
+  color: #A7B0C3;
+  font-weight: 700;
+}
+
+@media screen and (max-width:568px) {
+
+  .ant-btn,
+  .ant-btn-primary {
+    float: left !important;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .ant-input {
+    width: 170%;
+  }
+}
+
+.ant-input {
+
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border: 2px solid #2B78D4;
+  color: #002F68 !important;
+}
+
+.employee-details {
+  margin-right: 0px;
+  color: #002F68;
+  margin-top: 35px;
+
+}
+
+.textareaa {
+  max-width: 170% !important;
+  padding: 0 0;
+}
+
+.ant-btn {
+  padding: 4px 40px;
+  margin-right: 10px;
+}
+
+.ant-row {
+  align-items: baseline;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  width: 127px !important;
+  height: 155px !important;
+}
+
+.ant-modal-body {
+  padding: 0px 24px 2px 24px;
+}
+
+.saveBtn,
+.cancelBtn {
+  margin-top: 50px !important;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  background-color: #D1DCF4 !important;
+}
+
+.ant-modal-header {
+  border-bottom: none !important;
+  border-top-left-radius: 40px !important;
+  border-top-right-radius: 40px !important;
+}
+
+.ant-modal-content {
+  border-radius: 15px !important;
+}
+
+.cancelBtn {
+  color: #2B78D4;
+}
